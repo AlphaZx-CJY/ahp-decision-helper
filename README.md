@@ -63,11 +63,14 @@ Agent 会引导你完成整个 AHP 分析流程，最终给出推荐结果。
 ## 项目结构
 
 ```
-ahp-decision-helper/
-├── SKILL.md                    # Skill 定义（供 AI Agent 读取）
-├── scripts/
-│   └── ahp-calculator.js       # AHP 计算核心（Node.js）
-└── README.md                   # 本文件
+ahp-decision-helper/           (repo root)
+├── README.md                   # 本文件
+├── LICENSE                     # MIT 许可证
+├── ahp-decision-helper.skill   # 打包好的分发文件
+└── ahp-decision-helper/        # Skill 文件夹
+    ├── SKILL.md                # Skill 定义（供 AI Agent 读取）
+    └── scripts/
+        └── ahp-calculator.js   # AHP 计算核心（Node.js）
 ```
 
 ## 技术说明
